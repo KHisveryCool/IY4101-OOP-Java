@@ -1,2 +1,40 @@
-# IY4101-OOP-Java
-Object Oriented Programming Assignment 2 - Shape Management System
+# IY4101 - Object Oriented Programming
+## Practical Programming Assignment 2: Shape Management System
+
+**Student Name:** Khalid Huseyn  
+**Student ID:** P505533
+**Module:** IY4101 Object Oriented Programming  
+**Tutor:** Dr. Dena S. Y. Nuuman  
+
+---
+
+## Project Overview
+A Java console application that manages a list of geometric shapes 
+using Object-Oriented Programming principles.
+
+---
+
+## Class Structure
+
+- **Coordinates** - Stores and manages x,y points on a 2D canvas
+- **Shape** - Abstract parent class handling position, sides, area, 
+  perimeter, translate, scale and display
+- **Rectangle** - Subclass of Shape
+- **Square** - Subclass of Shape
+- **Circle** - Subclass of Shape
+- **Triangle** - Subclass of Shape
+- **ShapeList** - Manages an ArrayList of shapes (add, remove, 
+  translate, scale, display)
+- **ShapeManagement** - Main class with console menu
+
+---
+
+## Progress
+- [ ] Coordinates class
+- [ ] Shape class
+- [ ] Rectangle class
+- [ ] Square class
+- [ ] Circle class
+- [ ] Triangle class
+- [ ] ShapeList class
+- [ ] ShapeManagement class
