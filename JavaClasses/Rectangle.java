@@ -8,16 +8,33 @@ public class Rectangle extends Shape {
         this.length = length;
     }
 
+    @Override
     public double getArea(){
         return width * length;
     }
 
+    @Override
     public double getPerimeter(){
         double perimeter = 2*width + 2*length;
         return perimeter;
     }
 
-    public void scale(int factor,boolean sign){
+    @Override
+    public void scale(int factor, boolean sign){
 
+        super.scale(factor, sign);
+        if(sign){
+            width = width * factor;
+            length = length * factor;
+        }else{
+            width = width / factor;
+            length = length / factor;
+        }
+    }
+
+    @Override
+    public String display(){
+    return "Rectangle at " + getCoordinates().display() + ", Width: " + width + ", Length: " + length + ", Area: " + getArea() + ", Perimeter: " + getPerimeter();
     }
 }
+
