@@ -30,11 +30,11 @@ using Object-Oriented Programming principles.
 ---
 
 ## Progress
-- [ ] Coordinates class
-- [ ] Shape class
-- [ ] Rectangle class
-- [ ] Square class
-- [ ] Circle class
-- [ ] Triangle class
+- [x] Coordinates class
+- [x] Shape class
+- [x] Rectangle class
+- [x] Square class
+- [x] Circle class
+- [x] Triangle class
 - [ ] ShapeList class
 - [ ] ShapeManagement class
