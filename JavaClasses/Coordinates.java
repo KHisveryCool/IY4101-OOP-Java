@@ -26,11 +26,11 @@ public class Coordinates {
 
     public void scale(int factor, boolean sign){
         if (sign){
-            x= x * factor;
-            y= y * factor;
+            x= (x * factor);
+            y= (y * factor);
         }else{
-            x= x / factor;
-            y= y / factor;}
+            x= (x / factor);
+            y= (y / factor);}
     }
     
     public String display(){
