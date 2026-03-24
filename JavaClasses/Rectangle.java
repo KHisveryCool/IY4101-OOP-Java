@@ -37,4 +37,3 @@ public class Rectangle extends Shape {
     return "Rectangle at " + getCoordinates().display() + ", Width: " + width + ", Length: " + length + ", Area: " + getArea() + ", Perimeter: " + getPerimeter();
     }
 }
-
