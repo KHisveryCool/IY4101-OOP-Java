@@ -1,4 +1,4 @@
-public class Shape { //Write comments
+public abstract class Shape { //Write comments
     private Coordinates position;
     private int sides;
 
@@ -27,13 +27,11 @@ public class Shape { //Write comments
         position.scale(factor,sign);
     }
 
-    public double getArea(){
-        return 0.0; //place holder, since it will be overwritten later
-    }
+    public abstract double getArea();
+    
 
-    public double getPerimeter(){
-        return 0.0; //Also a place holder
-    }
+    public abstract double getPerimeter();
+    
 
     public String display(){
         return "Shape at " + position.display();
