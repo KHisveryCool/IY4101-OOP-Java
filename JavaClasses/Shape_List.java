@@ -57,12 +57,11 @@ public class Shape_List {
 
     public String display(){
         String result = "";
-        
+
         for(Shape shape : listofShapes){
             result += shape.display() + "\n";
         }
         return result;
     }
-
-
+    
 }
