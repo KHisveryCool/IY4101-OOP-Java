@@ -36,5 +36,5 @@ using Object-Oriented Programming principles.
 - [x] Square class
 - [x] Circle class
 - [x] Triangle class
-- [ ] ShapeList class
+- [x] ShapeList class
 - [ ] ShapeManagement class
