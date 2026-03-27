@@ -1,14 +1,20 @@
-public class Triangle extends Shape{
+/**
+ * Triangle class - Concrete class (Subclass of Shape)
+ * Represents a triangle geometric shape.
+ * A triangle is defined by three vertices (Coordinates objects).
+ */
 
-    private Coordinates p1;
-    private Coordinates p2;
-    private Coordinates p3;
+public class Triangle extends Shape{ // triangle extends to shape
 
-    public Triangle(Coordinates p1, Coordinates p2, Coordinates p3){
+    private Coordinates p1; // first vertex of the triangle
+    private Coordinates p2; // second vertex of the triangle
+    private Coordinates p3; // third vertex of the triangle
+
+    public Triangle(Coordinates p1, Coordinates p2, Coordinates p3){ // Initialize parent Shape class with 3 sides, position is null
         super(3, null); //since we have 3 seperates coordinates we will use null
-        this.p1 = p1;
-        this.p2 = p2;
-        this.p3 = p3;
+        this.p1 = p1; // first vertex ( Coordinates object )
+        this.p2 = p2; // second vertex ( Coordinates object )
+        this.p3 = p3; // third vertex ( Coordinates object )
     }
 
     @Override
@@ -37,7 +43,7 @@ public class Triangle extends Shape{
         double b = p2.distance(p3);
         double c = p3.distance(p1);
 
-        //now calculat the perimeter
+        //now calculate the perimeter
         double perimeter = a+b+c;
 
         return perimeter;
@@ -52,11 +58,6 @@ public class Triangle extends Shape{
         p2.scale(factor, sign);
         p3.scale(factor, sign);
     }
-    
-    @Override
-    public String display(){
-        return "Triangle - Vertices: " + p1.display() + ", " + p2.display() + ", " + p3.display() + ", Area: " + getArea() + ", Perimeter: " + getPerimeter();
-    }
 
     @Override
     public void translate(int dx,int dy){
@@ -64,6 +65,11 @@ public class Triangle extends Shape{
         p1.translate(dx, dy);
         p2.translate(dx, dy);
         p3.translate(dx, dy);
+    }
+    
+    @Override
+    public String display(){
+        return "Triangle\n  Vertex 1: " + p1.display() + "\n  Vertex 2: " + p2.display() + "\n  Vertex 3: " + p3.display() + "\n  Area: " + getArea() + "\n  Perimeter: " + getPerimeter();
     }
 
 }
